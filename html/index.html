@@ -1,0 +1,69 @@
+<html>
+<head>
+<title >My first login</title></head>
+<style>
+body{
+background-image: url("manage.jpg")
+}
+input[type=submit] {
+    style="font-size : 80px";
+    width: 5em;  height: 2em;
+}
+select{
+width: 12em;  height: 2em;
+}
+fieldset{
+    background-color:  #C7F42E;
+    border:  1px solid #ccc;
+ width: 30em;  height: 30em;
+}
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+</style>
+<font face="Arial"><body align="center" >
+<h1>Employee Signup</h1>
+<center ><font color="red"><form>
+<fieldset>
+  <b><label for="name2">First Name</label></b><nbsp>
+  <input type="text" name="firstname" id="name2" value=""><br>
+  <br><b><label for="name1">Last Name</label></b><nbsp>
+  <input type="text" name="lastname" id="name1" value=""><br>
+  <br><b><label for="gen">Gender :</label></b>
+  <input type="radio" name="gender" value="male"> Male<nbsp>
+  <input type="radio" name="gender" value="female"> Female<nbsp>
+  <input type="radio" name="gender" value="other"> Other<br>
+<br><b><label for="dep">Select Department :</label></b>
+<select name="Department" id="dep">
+  	<option value="">Select</option>
+  	<option value="QA">QA</option>
+  	<option value="development">development</option>
+  	<option value="HR">HR</option>
+  	<option value="Admin">Admin</option>
+  	<option value="system security">system security</option>
+</select><br>
+<br><b><label for="skill">Skills :</label></b>
+<input type="checkbox" name="skill1" value="java">Java<nbsp>
+<input type="checkbox" name="skill2" value="python">Python<nbsp>
+<input type="checkbox" name="skill3" value="html">html<nbsp>
+<input type="checkbox" name="skill4" value="html">Mysql DB<br><br>
+<b><label for="txtarea">Address :</label></b>
+<textarea name="message" id="txtarea" rows="10" cols="30">
+</textarea><br>
+<br><b><label for="brow">Browsers :</label></b>
+<input list="browsers" id="brow">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist><br><br>
+<input type="submit" value="submit" onclick="alert('Successfully Submitted!')">
+</form></center>
+</fieldset>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<button onclick="window.location.href ='next.html';">NextPage</button>
+</body></font>
+</html>
+
